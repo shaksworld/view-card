@@ -63,12 +63,10 @@ p{
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
 }
-#image .img{
-    background-image: url(./images/image-header-desktop.jpg);
+#image img{
     position: relative;
     width: 450px;
     height: 100%;
-    /* background-image: url(./images/image-header-desktop.jpg); */
     opacity: 0.6;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
@@ -86,24 +84,25 @@ p{
 
 @media (max-width: 375px) {
     .container{
-        width: 90vw;
+        width: 95vw;
         height: 100%;
         margin-top: 20px;
         flex-direction: column;
         padding: 0;
     }
     #image{
+        position: absolute;
         width: 100%;
         height: 240px;
-        
-        /* background-size: cover; */
     }
-    #image .img{
+    #image img{
         display: none;
     }
-    #image .image-self{
-        background-image: url(./images/image-header-mobile.jpg);
+    #image::before{
+        content: url(./images/image-header-mobile.jpg);
+        height: 100px;
     }
+    
     .text{
         width: 100%;
         /* order: 2; */
