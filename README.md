@@ -1,2 +1,1 @@
-# view-card
-for frondend mentor card view
+https://shaksworld.github.io/view-card/
