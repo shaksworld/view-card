@@ -34,10 +34,10 @@ p{
     margin: 50px;
 }
 .text h1{
-    font-family: Inter;
+    font-family: Inter sans-serif;
 }
 .text p{
-    font-family: Lexend Deca;
+    font-family: Lexend Deca sans-serif;
     padding: 20px 0;
     letter-spacing: 1px;
 }
@@ -52,18 +52,18 @@ p{
 }
 .text .second-text h1 span{
     color: hsla(0, 0%, 100%, 0.75);
-    font-family: Lexend Deca;
+    font-family: Lexend Deca sans-serif;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: lighter;
     padding-top: 2px;
 }
-#image{
+.image{
     background: hsl(277, 64%, 61%);
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
 }
-#image img{
+.image img{
     position: relative;
     width: 450px;
     height: 100%;
@@ -81,6 +81,14 @@ p{
 .container .second-text h1{
     display: grid;
 }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 40px;
+}
+.attribution a{
+    color: hsla(0, 0%, 100%, 0.75);
+}
 
 @media (max-width: 375px) {
     .container{
@@ -90,17 +98,23 @@ p{
         flex-direction: column;
         padding: 0;
     }
-    #image{
+    .image{
         position: absolute;
         width: 100%;
         height: 240px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
-    #image img{
+    .image img{
         display: none;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
-    #image::before{
+    .image::before{
         content: url(./images/image-header-mobile.jpg);
-        height: 100px;
+        /* width: 375px !important; */
+        opacity: 0.6;
     }
     
     .text{
